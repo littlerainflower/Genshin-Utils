@@ -1,7 +1,43 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    title= title + " - Genshin Utils"
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+  body#body-pd
+    header#header.header
+      .header_toggle
+        i#header-toggle.fa.fa-bars
+    #nav-bar.navbar
+      nav.nav
+        div
+          a.nav_logo(href='/')
+            span.nav_logo-icon GU
+            span.nav_logo-name Genshin Utils
+          .nav_list
+            a(class=((title + "").toLowerCase() === "index" ? "active" : undefined) + " nav_link", href='/')
+              i.fa.fa-th-large.nav_icon
+              span.nav_name Home
+
+            a.nav_link(href='#')
+              i.fa.fa-chart-bar.nav_icon
+              span.nav_name Simulator
+
+            a.nav_link(href='#')
+              i.fa.fa-calculator.nav_icon
+              span.nav_name Calculator
+
+            a.nav_link(href='#')
+              i.fa.fa-database.nav_icon
+              span.nav_name Database
+
+            a.nav_link(href='#')
+               i.fa.fa-book.nav_icon
+               span.nav_name Docs
+    .content
+      block content
+    footer.footer
+      p © Genshin Utils is not affiliated with the official Genshin Impact game or miHoYo Co., Ltd who owns all trademarks related to Genshin Impact.
+      a(href="https://haru-akiyama.github.io", target="_blank") Made by XiaoAi#3126 with ♡
+    script(src='/js/main.js')
+

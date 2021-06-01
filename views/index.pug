@@ -1,5 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    .row
+        .column.column-4.pd-right
+            .card
+                .container
+                    h4 Hello there!
+                    p Genshin Utils is a fan-made DB as well as a web panel for the demonstration of the certain DB <a href='./docs'><b>RESTful API</b></a>.
+        .column.column-6.pd-left
+            .card
+                .container
+                    h4 Current Game Events
+                    ul
+                        each event in events
+                            li.event_link
+                                a(href="./events/"+event.id)= event.name
