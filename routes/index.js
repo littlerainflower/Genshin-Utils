@@ -27,6 +27,10 @@ router.get('/events', function(req, res, next) {
   res.render('events', { title: "Events" , events : _events, breadcrumbs : breadcrumb});
 });
 
+function replaceAll(str, match, replacement){
+  return str.replace(new RegExp(escapeRegExp(match), 'g'), ()=>replacement);
+}
+
 router.get('/events/:event', function(req, res, next) {
   const event = events.get_(req.params.event)
   const breadcrumb = [
@@ -39,7 +43,7 @@ router.get('/events/:event', function(req, res, next) {
       url : "/events/"
     },
     {
-      name : req.params.event.replaceAll("_", " "),
+      name : replaceAll(req.params.event,"_", " "),
       url : "/events/" + req.params.event
     },
   ]
