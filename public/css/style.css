@@ -134,6 +134,10 @@ a{
     background-color: var(--accent-color);
 }
 
+.cap{
+   text-transform: capitalize;
+}
+
 @media screen and (min-width: 768px){
     body{
         margin: calc(var(--header-height) + 1rem) 0 0 0;
@@ -168,11 +172,21 @@ a{
     }
 }
 
+.justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .footer {
+    padding-bottom: 10px;
     width: 100%;
     padding-top: 10px;
-    padding-bottom: 10px;
+    display: grid;
     font-size: 14px;
+
+}
+.footer p {
+    text-align: center;
 }
 
 .footer a{
@@ -183,29 +197,26 @@ a{
     font-size: 14px;
 }
 
-.column{
-    float: left;
+.row{
+    display: flex;
+    margin-top: 10px;
 }
 
-.column-2 {
-    width: 20%;
+.column{
+    float: left;
+    flex: 1;
 }
-.column-3 {
-    width: 30%;
+
+.col-ml{
+    margin-left: 5px;
 }
-.column-4 {
-    width: 40%;
-}
-.column-5 {
-    width: 50%;
-}
-.column-6 {
-    width: 60%;
+
+.col-mr{
+    margin-right: 5px;
 }
 
 .row:after {
     content: "";
-    display: table;
     clear: both;
 }
 
@@ -219,6 +230,8 @@ a{
 
 .content{
     padding-top: 20px;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .event_link{
@@ -258,9 +271,19 @@ ul{
 }
 
 @media screen and (max-width: 600px) {
+    .row{
+        display: block;
+    }
     .column {
         width: 100% !important;
         padding: 0 !important;
         margin-top: 10px !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .content{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
+

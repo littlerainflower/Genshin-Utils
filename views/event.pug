@@ -3,14 +3,14 @@ extends layout
 block content
     h2= event.name
     img(src=event.img, style="width:100%;")
-    p= event.description
+    p.justify= event.description
     h3 Event Duration :
     ul
         each duration in event.duration
             li
                 span= duration
     h3 Event Details :
-    p= event.details
-    h3 Event eligibility :
-    p= event.eligibility
+    p.justify= event.details
+    h3 Event Eligibility :
+    p.justify= event.eligibility
 

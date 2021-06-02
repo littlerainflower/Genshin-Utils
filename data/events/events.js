@@ -11,12 +11,22 @@ module.exports = class items {
     get_curr_events(){
         const data = []
         for(let i = 0; i < events_data.length; i++){
-            data.push({
-                id : events_data[i].id,
-                name : events_data[i].name
-            })
+            const event = events_data[i]
+            if(event.availability === "current")
+                data.push({
+                    id : event.id,
+                    name : event.name
+                })
         }
         return data
+    }
+
+    get_without_details(){
+        return events_data.reduce(function(result, current) {
+            result[current.availability] = result[current.availability] || [];
+            result[current.availability].push(current);
+            return result;
+        }, {})
     }
 
     get_(id){

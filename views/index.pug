@@ -2,16 +2,24 @@ extends layout
 
 block content
     .row
-        .column.column-4.pd-right
-            .card
+        .column.card.col-mr
                 .container
                     h4 Hello there!
                     p Genshin Utils is a fan-made DB as well as a web panel for the demonstration of the certain DB <a href='./docs'><b>RESTful API</b></a>.
-        .column.column-6.pd-left
-            .card
+        .column.card.col-ml
                 .container
                     h4 Current Game Events
                     ul
                         each event in events
                             li.event_link
                                 a(href="./events/"+event.id)= event.name
+    .row
+        .column.card.col-mr
+            .container
+
+        .column.card.col-ml.col-mr
+            .container
+                p test
+
+        .column.card.col-ml
+            .container

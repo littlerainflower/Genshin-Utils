@@ -35,9 +35,17 @@ html
                i.fa.fa-book.nav_icon
                span.nav_name Docs
     .content
+      if breadcrumbs
+          - for (var i = 0; i < breadcrumbs.length; i++)
+            - var breadcrumb = breadcrumbs[i]
+              if i+1 == breadcrumbs.length
+                span.cap=breadcrumb.name
+              else
+                a(href=breadcrumb.url, class="cap")=breadcrumb.name
+                span=" > "
       block content
     footer.footer
       p © Genshin Utils is not affiliated with the official Genshin Impact game or miHoYo Co., Ltd who owns all trademarks related to Genshin Impact.
-      a(href="https://haru-akiyama.github.io", target="_blank") Made by XiaoAi#3126 with ♡
+      a(href="https://haru-akiyama.github.io", target="_blank") Made by XiaoRu#3126 with ♡
     script(src='/js/main.js')
 

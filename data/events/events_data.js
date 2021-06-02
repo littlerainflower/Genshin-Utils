@@ -9,6 +9,7 @@ module.exports = [
             "Event Gameplay Period: 2021-05-27 - 2021-06-06\n",
             "\"The Lost Hilichurl\" Quest: 2021-06-06 - 2021-06-08"
         ],
+        availability : "current",
         img: url + "mimi_tomo.jpg",
         eligibility: "Adventure Rank 20 or above",
         details : [
@@ -24,6 +25,7 @@ module.exports = [
         name : "Overflowing Mastery",
         description : "During the event, Travelers who successfully challenge Talent Level-Up Material Domains and who consume Original Resin to obtain rewards will receive double the output.",
         duration : ["2021-05-31 - 2021-06-07"],
+        availability : "current",
         img: url + "overflowing_mastery.jpg",
         eligibility: "After activating Talent Level-Up Material Domains",
         details: [
