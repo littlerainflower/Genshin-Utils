@@ -133,11 +133,4 @@ router.get('/weapons/:weapon', function(req, res, next) {
   res.render('weapon', { title: weapon.name,active:"database" , weapon : weapon, breadcrumbs : breadcrumb, types:_types});
 });
 
-function escapeRegExp(string) {
-  return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
-}
-function replaceAll(str, match, replacement){
-  return str.replace(new RegExp(escapeRegExp(match), 'g'), ()=>replacement);
-}
-
 module.exports = router;
