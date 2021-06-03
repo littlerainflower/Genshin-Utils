@@ -9,6 +9,13 @@ module.exports = class items {
         return items_data
     }
 
+    get_without_details(){
+        return items_data.reduce(function(result, current) {
+            result[current.type] = result[current.type] || [];
+            result[current.type].push(current);
+            return result;
+        }, {})
+    }
 
     get_(id){
         for (let i = 0; i < items_data.length; i++) {

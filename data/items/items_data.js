@@ -1,7 +1,6 @@
 const itemTypes = require('./item_types.js')
 const url = "https://xiaoru.sirv.com/genshin-utils/items/"
 
-
 module.exports = [
    {
       "id": "mora",

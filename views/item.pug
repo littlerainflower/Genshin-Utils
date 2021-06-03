@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h2= item.name
+    img(src=item.img, style="width:100%;")
+    p.justify= item.description
+    h3 Rarity :
+    p= item.rarity
+    h3 Type :
+    p= types[item.type].name
+    h3 Sources :
+    ul
+        each source in item.sources
+            li
+                span= source
+
