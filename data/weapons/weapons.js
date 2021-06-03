@@ -9,12 +9,21 @@ module.exports = class weapons {
         return weapons_data
     }
 
+    get_without_details(){
+        return weapons_data.reduce(function(result, current) {
+            result[current.type] = result[current.type] || [];
+            result[current.type].push(current);
+            return result;
+        }, {})
+    }
+
     get_(id){
-        weapons_data.forEach(weapon => {
+        for (let i = 0; i < weapons_data.length; i++) {
+            const weapon = weapons_data[i];
             if(weapon["id"] === id){
                 return weapon
             }
-        });
+        }
         return "not found"
     }
 

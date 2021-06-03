@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    - for(key in weapons)
+    h3.cap= types[key].name
+    ul
+        each weapon in weapons[key]
+            li.event_link
+                a(href="/weapons/" + weapon.id)= weapon.name

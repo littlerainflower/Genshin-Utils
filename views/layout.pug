@@ -15,7 +15,7 @@ html
             span.nav_logo-icon GU
             span.nav_logo-name Genshin Utils
           .nav_list
-            a(class=((title + "").toLowerCase() === "index" ? "active" : undefined) + " nav_link", href='/')
+            a(class=((active + "").toLowerCase() === "index" ? "active" : undefined) + " nav_link", href='/')
               i.fa.fa-th-large.nav_icon
               span.nav_name Home
 
@@ -27,7 +27,7 @@ html
               i.fa.fa-calculator.nav_icon
               span.nav_name Calculator
 
-            a.nav_link(href='/database')
+            a(class=((active + "").toLowerCase() === "database" ? "active" : undefined) + " nav_link", href='/database')
               i.fa.fa-database.nav_icon
               span.nav_name Database
 

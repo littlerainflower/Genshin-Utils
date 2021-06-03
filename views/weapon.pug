@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h2= weapon.name
+    img(src=weapon.img, style="width:100%;")
+    p.justify= weapon.lore
+    h3 Rarity :
+    p= weapon.rarity
+    h3 Type :
+    p= types[weapon.type].name
+    h3 Sources :
+    ul
+        each source in weapon.sources
+            li
+                span= source
+
