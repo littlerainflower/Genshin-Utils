@@ -51,7 +51,7 @@ html
       .modal-content
         .modal-header
           button#defaultOpen.tablink(onclick="openPage('About', this)") About
-          button.tablink(onclick="openPage('Updates', this)") Updates
+          button.tablink(onclick="openPage('Changelog', this)") Changelog
           button.tablink(onclick="openPage('to-do', this)") To-Do
           button.tablink(onclick="openPage('Contact', this)") Contact
         .modal-body
@@ -62,22 +62,8 @@ html
             p So please don't bully me if you find the api load or web load slow at first, as the site sleeps after 30mins of inactivity.
             p FYI this is made with Express.js, Pug, and my lifeless soul. All the data and images are <s>stolen</s> taken from <a href='https://genshin-impact.fandom.com' target='_blank'>Genshin Impact Wiki</a> and stored on json files and <a href='https://sirv.com' target='_blank'>Sirv (an image hosting site)</a>. Though I would share my github repo, I don't wanna get bullied for my trash codes.
             p Well feel free to give any feedbacks to this lifeless idiot (details in Contact Tab).
-          #Updates.tabcontent
+          #Changelog.tabcontent
             p(style="font-size:13px")
-              span#bugFilterBtn.btn(style="border: 1px grey solid")
-                span.fa.fa-bug(style="color:red")
-                span(style="margin-left:5px")
-                span Bug Fixes
-              span(style="margin-left:10px")/
-              span#featureFilterBtn.btn(style="border: 1px grey solid")
-                span.fa.fa-code(style="color:green")
-                span(style="margin-left:5px")
-                span Features
-              span(style="margin-left:10px")
-              span#updateFilterBtn.btn(style="border: 1px grey solid")
-                span.fa.fa-info(style="color:grey")
-                span(style="margin-left:5px")
-                span Updates
           #to-do.tabcontent
             p(style="font-size:13px")
               span.fa.fa-check-square(style="color:green")
