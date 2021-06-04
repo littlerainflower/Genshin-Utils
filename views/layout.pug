@@ -89,7 +89,7 @@ html
               span(style="margin-left:10px")
             ul
               for todo in todos
-                li.mb-10
+                li.mb-10(style="font-size:13px")
                   if(todo.status === "Finished")
                     span.fa.fa-check-square(style="color:green")
                   if(todo.status === "Implementing")
