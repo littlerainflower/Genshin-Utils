@@ -97,7 +97,6 @@ router.get('/items/:item', function(req, res, next) {
   res.render('item', { title: item.name,active:"database" , item : item, breadcrumbs : breadcrumb, types:_types});
 });
 
-
 router.get('/weapons', function(req, res, next) {
   const _weapons = weapons.get_without_details()
   const _types = weapons.get_types()
@@ -113,6 +112,7 @@ router.get('/weapons', function(req, res, next) {
   ]
   res.render('weapons', { title: "Weapons",active:"database" , weapons : _weapons, breadcrumbs : breadcrumb, types:_types});
 });
+
 router.get('/weapons/:weapon', function(req, res, next) {
   const weapon = weapons.get_(req.params.weapon)
   const _types = weapons.get_types()

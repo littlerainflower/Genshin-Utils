@@ -2,15 +2,21 @@ extends layout
 
 block content
     h2= item.name
-    img(src=item.img, style="width:100%;")
+    img(src=item.img, style="height:150px;", class="center")
     p.justify= item.description
-    h3 Rarity :
-    p= item.rarity
+    if(item.rarity)
+        h3 Rarity :
+        - for(let i = 0; i < item.rarity; i++)
+            span
+                img(src="https://xiaoru.sirv.com/genshin-utils/misc/skill_star.png")
+    if(item.effect)
+        h3 Effect :
+        p= item.effect
     h3 Type :
     p= types[item.type].name
     h3 Sources :
     ul
         each source in item.sources
             li
-                span= source
+                p= source
 

@@ -25,3 +25,39 @@ function colorLink(){
     }
 }
 linkColor.forEach(l=> l.addEventListener('click', colorLink))
+
+var modal = document.getElementById("infoModal");
+
+var btn = document.getElementById("infoBtn");
+
+var span = document.getElementById("closeInfoModal");
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function openPage(pageName,elmnt) {
+    let i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("tab-active");
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.classList.add("tab-active");
+}
+
+document.getElementById("defaultOpen").click();

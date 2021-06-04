@@ -8,6 +8,9 @@ html
     header#header.header
       .header_toggle
         i#header-toggle.fa.fa-bars
+      .header_right
+        a#infoBtn.btn.circle
+          i.fa.fa-info
     #nav-bar.navbar
       nav.nav
         div
@@ -44,6 +47,123 @@ html
                 a(href=breadcrumb.url, class="cap")=breadcrumb.name
                 span=" > "
       block content
+    #infoModal.modal
+      .modal-content
+        .modal-header
+          button#defaultOpen.tablink(onclick="openPage('About', this)") About
+          button.tablink(onclick="openPage('Updates', this)") Updates
+          button.tablink(onclick="openPage('Plans', this)") Plans
+          button.tablink(onclick="openPage('Contact', this)") Contact
+        .modal-body
+          #About.tabcontent
+            p Long story short, I was searching for a Genshin Impact API to use it on a discord bot but even though I found some, they didn't have everything I wanted. So, I made Genshin-Utils.
+            p To be fair, this web application is just to show what my API contains. Feel free to check the Docs tab in the left navigation for more details about the API.
+            p I originally wanted to host this site on Firebase but I don't have a credit card so can't use the Functions service, and so tried Vercel using Next.js but I swear I'm never touching React again. Now I've to settle with Heroku and 550 dyno hours per month.
+            p So please don't bully me if you find the api load or web load slow at first, as the site sleeps after 30mins of inactivity.
+            p FYI this is made with Express.js, Pug, and my lifeless soul. All the data and images are <s>stolen</s> taken from <a href='https://genshin-impact.fandom.com' target='_blank'>Genshin Impact Wiki</a> and stored on json files and <a href='https://sirv.com' target='_blank'>Sirv (an image hosting site)</a>. Though I would share my github repo, I don't wanna get bullied for my trash codes.
+            p Well feel free to give any feedbacks to this lifeless idiot (details in Contact Tab).
+          #Updates.tabcontent
+            p(style="font-size:13px")
+              span#bugFilterBtn.btn(style="border: 1px grey solid")
+                span.fa.fa-bug(style="color:red")
+                span(style="margin-left:5px")
+                span Bug Fixes
+              span(style="margin-left:10px")/
+              span#featureFilterBtn.btn(style="border: 1px grey solid")
+                span.fa.fa-code(style="color:green")
+                span(style="margin-left:5px")
+                span Features
+              span(style="margin-left:10px")
+              span#updateFilterBtn.btn(style="border: 1px grey solid")
+                span.fa.fa-info(style="color:grey")
+                span(style="margin-left:5px")
+                span Updates
+          #Plans.tabcontent
+            p(style="font-size:13px")
+              span.fa.fa-check-square(style="color:green")
+              span(style="margin-left:5px")
+              span Finished
+              span(style="margin-left:10px")
+              span.fa.fa-circle(style="color:green")
+              span(style="margin-left:5px")
+              span Implementing
+              span(style="margin-left:10px")
+              span.fa.fa-circle(style="color:red")
+              span(style="margin-left:5px")
+              span Important
+              span(style="margin-left:10px")
+              span.fa.fa-circle(style="color:grey")
+              span(style="margin-left:5px")
+              span Inessential
+              span(style="margin-left:10px")
+            ul
+              li.mb-10
+                p(style="font-size:13px")
+                  span.fa.fa-check-square(style="color:green")
+                  span(style="margin-left:5px")
+                  span Detailed Page for almost everything
+              li.mb-10
+                p(style="font-size:13px")
+                  span.fa.fa-circle(style="color:green")
+                  span(style="margin-left:5px")
+                  span Data Collection
+                  ul(style="margin-left:15px")
+                    li.mb-10
+                      p(style="font-size:13px")
+                        span.fa.fa-check-square(style="color:green")
+                        span(style="margin-left:5px")
+                        span Items
+                    li.mb-10
+                      p(style="font-size:13px")
+                        span.fa.fa-circle(style="color:green")
+                        span(style="margin-left:5px")
+                        span Artifacts
+                    li.mb-10
+                      p(style="font-size:13px")
+                        span.fa.fa-circle(style="color:red")
+                        span(style="margin-left:5px")
+                        span Weapons
+                    li.mb-10
+                      p(style="font-size:13px")
+                        span.fa.fa-check-square(style="color:green")
+                        span(style="margin-left:5px")
+                        span Events
+                    li.mb-10
+                      p(style="font-size:13px")
+                        span.fa.fa-circle(style="color:red")
+                        span(style="margin-left:5px")
+                        span Mobs
+              li.mb-10
+                p(style="font-size:13px")
+                  span.fa.fa-check-square(style="color:green")
+                  span(style="margin-left:5px")
+                  span API Endpoint
+              li.mb-10
+                 p(style="font-size:13px")
+                   span.fa.fa-circle(style="color:red")
+                   span(style="margin-left:5px")
+                   span Search
+              li.mb-10
+                p(style="font-size:13px")
+                  span.fa.fa-circle(style="color:red")
+                  span(style="margin-left:5px")
+                  span Resin, Weapon, Character, Primogems Calculator
+              li.mb-10
+                p(style="font-size:13px")
+                  span.fa.fa-circle(style="color:red")
+                  span(style="margin-left:5px")
+                  span Wish Simulator
+              li.mb-10
+                p(style="font-size:13px")
+                  span.fa.fa-circle(style="color:red")
+                  span(style="margin-left:5px")
+                  span API and Web app Documentation
+          #Contact.tabcontent
+            p Discord : XiaoRu#3126 (695852949775319150)
+            p Email : harutoakiyama20@gmail.com
+        .modal-footer
+          h4.hidden_h4 &nbsp;
+          a#closeInfoModal.btn.close CLOSE
     footer.footer
       p © Genshin Utils is not affiliated with the official Genshin Impact game or miHoYo Co., Ltd who owns all trademarks related to Genshin Impact.
       a(href="https://haru-akiyama.github.io", target="_blank") Made by XiaoRu#3126 with ♡
