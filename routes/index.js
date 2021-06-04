@@ -61,7 +61,6 @@ router.get('/events/:event', function(req, res, next) {
   res.render('event', { title: event.name,active:"database" , event : event, breadcrumbs : breadcrumb});
 });
 
-
 router.get('/items', function(req, res, next) {
   const _items = items.get_without_details()
   const _types = items.get_types()

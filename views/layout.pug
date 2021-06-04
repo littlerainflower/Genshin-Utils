@@ -63,7 +63,12 @@ html
             p FYI this is made with Express.js, Pug, and my lifeless soul. All the data and images are <s>stolen</s> taken from <a href='https://genshin-impact.fandom.com' target='_blank'>Genshin Impact Wiki</a> and stored on json files and <a href='https://sirv.com' target='_blank'>Sirv (an image hosting site)</a>. Though I would share my github repo, I don't wanna get bullied for my trash codes.
             p Well feel free to give any feedbacks to this lifeless idiot (details in Contact Tab).
           #Changelog.tabcontent
-            p(style="font-size:13px")
+            for cl in changelog
+              p(style="font-size:14px")= cl.date
+              ul(style="margin-left:10px;margin-top:8px")
+                for change in cl.changes
+                  li.mb-10 - <span style="margin-left:5px"></span>
+                    span(style="font-size:13px")= change
           #to-do.tabcontent
             p(style="font-size:13px")
               span.fa.fa-check-square(style="color:green")
@@ -83,67 +88,32 @@ html
               span Inessential
               span(style="margin-left:10px")
             ul
-              li.mb-10
-                p(style="font-size:13px")
-                  span.fa.fa-check-square(style="color:green")
+              for todo in todos
+                li.mb-10
+                  if(todo.status === "Finished")
+                    span.fa.fa-check-square(style="color:green")
+                  if(todo.status === "Implementing")
+                    span.fa.fa-circle(style="color:green;margin-left:-1px")
+                  if(todo.status === "Important")
+                    span.fa.fa-circle(style="color:red;margin-left:-1px")
+                  if(todo.status === "Inessential")
+                    span.fa.fa-circle(style="color:grey;margin-left:-1px")
                   span(style="margin-left:5px")
-                  span Detailed Page for almost everything
-              li.mb-10
-                p(style="font-size:13px")
-                  span.fa.fa-circle(style="color:green")
-                  span(style="margin-left:5px")
-                  span Data Collection
-                  ul(style="margin-left:15px")
-                    li.mb-10
-                      p(style="font-size:13px")
-                        span.fa.fa-check-square(style="color:green")
-                        span(style="margin-left:5px")
-                        span Items
-                    li.mb-10
-                      p(style="font-size:13px")
-                        span.fa.fa-circle(style="color:green")
-                        span(style="margin-left:5px")
-                        span Artifacts
-                    li.mb-10
-                      p(style="font-size:13px")
-                        span.fa.fa-circle(style="color:red")
-                        span(style="margin-left:5px")
-                        span Weapons
-                    li.mb-10
-                      p(style="font-size:13px")
-                        span.fa.fa-check-square(style="color:green")
-                        span(style="margin-left:5px")
-                        span Events
-                    li.mb-10
-                      p(style="font-size:13px")
-                        span.fa.fa-circle(style="color:red")
-                        span(style="margin-left:5px")
-                        span Mobs
-              li.mb-10
-                p(style="font-size:13px")
-                  span.fa.fa-check-square(style="color:green")
-                  span(style="margin-left:5px")
-                  span API Endpoint
-              li.mb-10
-                 p(style="font-size:13px")
-                   span.fa.fa-circle(style="color:red")
-                   span(style="margin-left:5px")
-                   span Search
-              li.mb-10
-                p(style="font-size:13px")
-                  span.fa.fa-circle(style="color:red")
-                  span(style="margin-left:5px")
-                  span Resin, Weapon, Character, Primogems Calculator
-              li.mb-10
-                p(style="font-size:13px")
-                  span.fa.fa-circle(style="color:red")
-                  span(style="margin-left:5px")
-                  span Wish Simulator
-              li.mb-10
-                p(style="font-size:13px")
-                  span.fa.fa-circle(style="color:red")
-                  span(style="margin-left:5px")
-                  span API and Web app Documentation
+                  span= todo.title
+                  if(todo.sublist)
+                    ul(style="margin-left:20px;margin-top:8px")
+                      for sub in todo.sublist
+                        li.mb-10 - <span style="margin-left:5px"></span>
+                          if(sub.status === "Finished")
+                            span.fa.fa-check-square(style="color:green")
+                          if(sub.status === "Implementing")
+                            span.fa.fa-circle(style="color:green;margin-left:-1px")
+                          if(sub.status === "Important")
+                            span.fa.fa-circle(style="color:red;margin-left:-1px")
+                          if(sub.status === "Inessential")
+                            span.fa.fa-circle(style="color:grey;margin-left:-1px")
+                          span(style="margin-left:5px")
+                          span= sub.title
           #Contact.tabcontent
             p Discord : XiaoRu#3126 (695852949775319150)
             p Email : harutoakiyama20@gmail.com
