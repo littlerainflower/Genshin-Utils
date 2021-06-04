@@ -90,6 +90,10 @@ app.locals.todos = [
   {
     "title" : "API and Web app Documentation",
     "status" : "Important"
+  },
+  {
+    "title" : "Make an API Wrapper for Node.js",
+    "status" : "Inessential"
   }
 ]
 
