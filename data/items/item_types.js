@@ -63,8 +63,4 @@ module.exports = {
       "id": "gadgets",
       "name": "Gadgets"
    },
-   "quest_items": {
-      "id": "quest_items",
-      "name": "Quest Items"
-   }
 }

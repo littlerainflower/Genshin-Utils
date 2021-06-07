@@ -2614,6 +2614,113 @@ module.exports = [
       ]
    },
    {
+      "id": "iron_chunk",
+      "name": "Iron Chunk",
+      "description": "This iron chunk can be turned into a multitude of handy items in the hands of a skilled craftsman.",
+      "type": "forging_materials",
+      "img": url + "iron_chunk.png",
+      "sources": [
+          "Found in the wild",
+          "Sold by Shitou"
+      ]
+   },
+   {
+      "id": "white_iron_chunk",
+      "name": "White Iron Chunk",
+      "description": "Skilled hands can make this into something brilliant",
+      "type": "forging_materials",
+      "img": url + "white_iron_chunk.png",
+      "sources": [
+         "Found in the wild",
+         "Sold by Shitou",
+         "Expeditions\n" +
+         "(Whispering Woods, Dadaupa Gorge and Yaoguang Shoal)"
+      ]
+   },
+   {
+      "id": "crystal_chunk",
+      "name": "Crystal Chunk",
+      "description": "An uncut crystal. Only professional craftsmanship can bring out its true value.",
+      "type": "forging_materials",
+      "img": url + "crystal_chunk.png",
+      "sources": [
+          "Found in the wild",
+          "Found in Stormterror's Lair",
+          "Expeditions (8h, 12h, and 20h)\n" +
+          "(Whispering Woods, Dadaupa Gorge and Yaoguang Shoal)"
+      ]
+   },
+   {
+      "id": "magic_crystal_chunk",
+      "name": "Magic Crystal Chunk",
+      "description": "These crystal chunks can be refined into Weapon EXP materials by using Original Resin. Crystals from mines that were eroded by the energy of the Ley Lines cannot be processed by ordinary means.",
+      "type": "forging_materials",
+      "img": url + "magic_crystal_chunk.png",
+      "sources": [
+          "Found in the wild"
+      ]
+   },
+   {
+      "id": "starsilver",
+      "name": "Starsilver",
+      "description": "A rare and precious ore formed by the unique geographical conditions and Ley Lines of Dragonspine.",
+      "type": "forging_materials",
+      "img": url + "starsilver.png",
+      "sources": [
+          "Dragonspine"
+      ]
+   },
+   {
+      "id": "northlander_sword_billet",
+      "name": "Northlander Sword Billet",
+      "description": "Can be used to forge 4-star swords. Philosophers believe marble has the potential to be sculpted into a beautiful statue. Likewise, these billets have the potential to become something greater.",
+      "type": "forging_materials",
+      "rarity": 4,
+      "img": url + "northlander_sword_billet.png",
+      "sources": [
+      ]
+   },
+   {
+      "id": "northlander_bow_billet",
+      "name": "Northlander Bow Billet",
+      "description": "Can be used to forge 4-star bows. Philosophers believe marble has the potential to be sculpted into a beautiful statue. Likewise, these billets have the potential to become something greater.",
+      "type": "forging_materials",
+      "rarity": 4,
+      "img": url + "northlander_bow_billet.png",
+      "sources": [
+      ]
+   },
+   {
+      "id": "northlander_claymore_billet",
+      "name": "Northlander Claymore Billet",
+      "description": "Can be used to forge 4-star claymores. Philosophers believe marble has the potential to be sculpted into a beautiful statue. Likewise, these billets have the potential to become something greater.",
+      "type": "forging_materials",
+      "rarity": 4,
+      "img": url + "northlander_claymore_billet.png",
+      "sources": [
+      ]
+   },
+   {
+      "id": "northlander_catalyst_billet",
+      "name": "Northlander Catalyst Billet",
+      "description": "Can be used to forge 4-star catalysts. Philosophers believe marble has the potential to be sculpted into a beautiful statue. Likewise, these billets have the potential to become something greater.",
+      "type": "forging_materials",
+      "rarity": 4,
+      "img": url + "northlander_catalyst_billet.png",
+      "sources": [
+      ]
+   },
+   {
+      "id": "northlander_polearm_billet",
+      "name": "Northlander Polearm Billet",
+      "description": "Can be used to forge 4-star polearms. Philosophers believe marble has the potential to be sculpted into a beautiful statue. Likewise, these billets have the potential to become something greater.",
+      "type": "forging_materials",
+      "rarity": 4,
+      "img": url + "northlander_polearm_billet.png",
+      "sources": [
+      ]
+   },
+   {
       "id": "unmoving_essential_oil",
       "name": "Unmoving Essential Oil",
       "description": "Grants greater affinity for Geo. boosting Geo DMG. You can feel the fine Geo pellets within when applied. It's said to help with physical injuries.",
@@ -2746,13 +2853,99 @@ module.exports = [
       ]
    },
    {
-      "id" : "dwelling_in_the_clouds_blueprints",
-      "name" : "\"Dwelling in the Clouds\" Blueprints",
-      "description" : "The designs for the Dwelling in the Clouds, built long ago by Cloud Retainer.",
-      "type": "quest_items",
-      "img" : url + "dwelling_in_the_clouds_blueprints.png",
+      "id" : "adepti_seekers_stove",
+      "name" : "Adepti Seeker's Stove",
+      "description" : "A portable stove that can be quickly set up for cooking in the environment. If you enter into combat nearby, it will be destroyed. Liyue's terrain is vast, varied, and at times even inhospitable — and yet, all its inhabitants share a love of good food. These two phenomena would not be able to coexist were it not for portable cooking equipment like this. Whether you are scaling the heights of Jueyun Karst or exploring the islets of Guyun Stone Forest, bringing a portable stove means that a delicious and freshly-cooked hot meal is always available at a moment's notice.",
+      "effect" : "A portable stove that can be used to access Cooking when outside of combat.",
+      "type": "gadgets",
+      "rarity" : 3,
+      "gadget" : {
+         "reusable" : "No",
+         "equipment" : "No",
+      },
+      "img" : url + "adepti_seekers_stove.png",
       "sources" : [
-         "An Adeptal Summons"
+         "Reach Reputation Level 5 in Liyue"
       ]
-   }
+   },
+   {
+      "id" : "anemo_treasure_compass",
+      "name" : "Anemo Treasure Compass",
+      "description" : "A compass that can be used in Mondstadt to search for nearby chests. The needle of the Treasure Compass doesn't spin according to the world's magnetic field, but rather follows the energy of ley lines to lead the user to treasure.",
+      "effect" : "A compass that can be used in Mondstadt to search for nearby chests. If a chest is nearby, then it goes on cooldown for 30 seconds, otherwise, 5 seconds.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "anemo_treasure_compass.png",
+      "sources" : [
+         "Reach Reputation Level 6 in Mondstadt"
+      ]
+   },
+   {
+      "id" : "anemoculus_resonance_stone",
+      "name" : "Anemoculus Resonance Stone",
+      "description" : "This man-made stone plate possesses a certain characteristic similar to that of the Anemo Statues of The Seven, giving it the power to resonate with Anemoculi. Oculus Resonance Stones are crude imitations of the Statues of The Seven constructed by the ancients. But it is precisely this crudeness that makes them crave the power of elemental oculi, thus providing devout worshippers and adventurers alike a prime opportunity to collect oculi.",
+      "effect" : "A stone that can be used in Mondstadt to search for nearby Anemoculi.",
+      "gadget" : {
+         "reusable" : "No",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 3,
+      "img" : url + "anemoculus_resonance_stone.png",
+      "sources" : [
+         "Reach Reputation Level 2 in Mondstadt"
+      ]
+   },
+   {
+      "id" : "endora",
+      "name" : "Endora",
+      "description" : "Just a very curious Lochfolk who only wishes to see the world. Might actually get along very well with Mini Seelie: Dayflower, but please do not meld them together, thank you.",
+      "effect" : "Commemorative gadget.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "endora.png",
+      "sources" : [
+         "Wishful Drops Event"
+      ]
+   },
+   {
+      "id" : "geo_treasure_compass",
+      "name" : "Geo Treasure Compass",
+      "description" : "A compass that can be used in Liyue to search for nearby chest. The land of Geo is rich with valuable resources, with treasures hidden throughout the mountains and wilderness just waiting to be found.",
+      "effect" : "A compass that can be used in Liyue to search for nearby chests. If a chest is nearby, then it goes on cooldown for 30 seconds, otherwise, 5 seconds.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "geo_treasure_compass.png",
+      "sources" : [
+         "Reach Reputation Level 6 in Liyue"
+      ]
+   },
+   {
+      "id" : "geoculus_resonance_stone",
+      "name" : "Geoculus Resonance Stone",
+      "description" : "This exquisite stone plate imitates a certain mysterious quality of the Geo Statues of The Seven, causing it to lead people to the location of Geoculi. Elemental Oculi represent the lost power of the Statues of The Seven - perhaps offering this power back to the statue also has significance for the lands that the gods watch over.",
+      "effect" : "A stone that can be used in Liyue to search for nearby Geoculi.",
+      "gadget" : {
+         "reusable" : "No",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 3,
+      "img" : url + "geoculus_resonance_stone.png",
+      "sources" : [
+         "Reach Reputation Level 2 in Liyue"
+      ]
+   },
 ]

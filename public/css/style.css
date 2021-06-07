@@ -169,11 +169,19 @@ a{
     margin-top: 10px;
 }
 
+.row-no{
+    display: flex;
+    margin-top: 10px;
+}
 .column{
     float: left;
     flex: 1;
 }
 
+.column-no{
+    float: left;
+    flex: 1;
+}
 .col-ml{
     margin-left: 5px;
 }
@@ -409,4 +417,20 @@ ul{
 
 .tab-active{
     background: var(--secondary-color);
+}
+
+.tbl_stats{
+    border-collapse: collapse;
+}
+
+.tbl_stats tr td {
+    text-align: center;
+}
+.tbl_stats thead tr td {
+    font-size: 15px;
+}
+.tbl_stats td {
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+    font-size: 14px;
 }

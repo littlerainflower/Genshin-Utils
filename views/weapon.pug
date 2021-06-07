@@ -1,16 +1,44 @@
 extends layout
 
 block content
-    h2= weapon.name
-    img(src=weapon.img, style="width:100%;")
-    p.justify= weapon.lore
-    h3 Rarity :
-    p= weapon.rarity
-    h3 Type :
-    p= types[weapon.type].name
-    h3 Sources :
-    ul
+    h2(style="display:flex")
+        =weapon.name
+        i(style="font-size:12px;margin-left:10px;margin-right:10px;margin-top:12px;font-weight:normal").fa.fa-circle
+        span(style="font-size:18px;margin-top:5px;font-weight:normal")
+            =types[weapon.type].name
+    .row-no
+        .column-no.col-mr.center(style="text-align: center;")
+            p(style="text-align: center") Base
+            img(src=weapon.img, style="height:180px;display: inline-block; ", alt="Base", title="Base")
+        .column-no.col-ml.center(style="text-align: center;")
+            p(style="text-align: center") 2nd Ascension
+            img(src=weapon["2nd_img"], style="height:180px;display: inline-block; ", alt="2nd Ascension", title="2nd Ascension")
+    p.justify= weapon.description
+    if(weapon.passive !== "none")
+        h4(style="margin-bottom:0px")= "Passive : " + weapon.passive.title
+        p(style="margin-top:5px")= weapon.passive.description
+    if(weapon.rarity)
+        h4(style="margin-bottom:5px") Rarity :
+        - for(let i = 0; i < weapon.rarity; i++)
+            span
+                img(src="https://xiaoru.sirv.com/genshin-utils/misc/skill_star.png")
+    h4(style="margin-bottom:0px") Sources :
+    ul(style="margin-top:5px")
         each source in weapon.sources
             li
                 span= source
-
+    h4(style="margin-bottom:5px") Stats :
+    table.tbl_stats
+        thead
+            tr
+                td Level
+                td Base ATK
+                if(weapon.secondary !== "none")
+                    td= weapon.secondary.type
+        tbody
+            -for(let i =0; i < weapon.base_atk.length; i++)
+                tr
+                    td= weapon.base_atk[i].level
+                    td= weapon.base_atk[i].value
+                    if(weapon.secondary !== "none")
+                        td= weapon.secondary.stats[i].value
