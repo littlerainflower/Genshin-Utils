@@ -106,14 +106,14 @@ app.locals.changelog = [
     ]
   },
   {
-    "date" : "2021/6/4",
+    "date" : "2021/6/5",
     "changes" : [
         "Added Info Modal",
         "Bug fixes"
     ]
   },
   {
-    "date" : "2021/5/4",
+    "date" : "2021/6/4",
     "changes" : [
       "Added Detailed Page for Events and Items",
       "Added Database Page",
