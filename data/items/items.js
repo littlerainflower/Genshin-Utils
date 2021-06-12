@@ -17,6 +17,10 @@ module.exports = class items {
         }, {})
     }
 
+    get_recently_added(){
+        return items_data.slice(Math.max(items_data.length - 2, 1))
+    }
+
     get_(id){
         for (let i = 0; i < items_data.length; i++) {
             const item = items_data[i];

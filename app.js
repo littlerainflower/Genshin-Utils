@@ -102,6 +102,8 @@ app.locals.changelog = [
     "date" : "2021/6/12",
     "changes" : [
       "Added All Items With Their Respective Images",
+      "Recently Added Items",
+      "Removed Current Events (Totally not because I'm lazy)",
     ]
   },
   {

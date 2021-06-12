@@ -3157,6 +3157,38 @@ module.exports = [
       ]
    },
    {
+      "id" : "wind_catcher",
+      "name" : "Wind Catcher",
+      "description" : "This item was designed by Knights of Favonius scholars to help the Knights on their scouting expeditions and travels by affording them the ability to manipulate the blessings of the Anemo God. In order to take advantage of its wind currents with a wind glider, however, you technically need a gliding license - this has prevented it from being widely used, at least legally anyway.",
+      "effect" : "A bottle that is able to hold up to 5 Anemograna and use their energy to create wind currents. Has a cooldown of 100 seconds and cannot be used in combat.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "wind_catcher.png",
+      "sources" : [
+         "Reach Reputation Level 3 in Mondstadt"
+      ]
+   },
+   {
+      "id" : "windsong_lyre",
+      "name" : "Windsong Lyre",
+      "effect" : "Allows the player to play music.",
+      "description" : "Use this traditional instrument from Mondstadt to play songs. An instrument of incredible workmanship, it will surely produce moving music when played by able hands. Mondstadt has a long-standing tradition of poetry and song, and thus also boasts a long history of constructing instruments to that effect. Bards are most proud of their songs and poems, and perhaps the instruments, too, would be proud of their owners and their musical tradition.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "windsong_lyre.png",
+      "sources" : [
+         "Invitation of Windblume Event Shop"
+      ]
+   },
+   {
       "id" : "waverider_repair_toolbox",
       "name" : "Waverider Repair Toolbox",
       "description" : "A toolbox filled with all manner of items that can be used to repair the damage done to a Waverider.\n" +
@@ -3172,22 +3204,6 @@ module.exports = [
       "img" : url + "waverider_repair_toolbox.png",
       "sources" : [
          "Midsummer Island Adventure Part I: Main Cannon, Make Ready... Fire!"
-      ]
-   },
-   {
-      "id" : "wind_catcher",
-      "name" : "Wind Catcher",
-      "description" : "This item was designed by Knights of Favonius scholars to help the Knights on their scouting expeditions and travels by affording them the ability to manipulate the blessings of the Anemo God. In order to take advantage of its wind currents with a wind glider, however, you technically need a gliding license - this has prevented it from being widely used, at least legally anyway.",
-      "effect" : "A bottle that is able to hold up to 5 Anemograna and use their energy to create wind currents. Has a cooldown of 100 seconds and cannot be used in combat.",
-      "gadget" : {
-         "reusable" : "Yes",
-         "equipment" : "Yes",
-      },
-      "type": "gadgets",
-      "rarity" : 4,
-      "img" : url + "wind_catcher.png",
-      "sources" : [
-         "Reach Reputation Level 3 in Mondstadt"
       ]
    },
    {
@@ -3217,22 +3233,6 @@ module.exports = [
       "type": "gadgets",
       "rarity" : 4,
       "img" : url + "windblume_festival_commemorative_balloon.png",
-      "sources" : [
-         "Invitation of Windblume Event Shop"
-      ]
-   },
-   {
-      "id" : "windsong_lyre",
-      "name" : "Windsong Lyre",
-      "effect" : "Allows the player to play music.",
-      "description" : "Use this traditional instrument from Mondstadt to play songs. An instrument of incredible workmanship, it will surely produce moving music when played by able hands. Mondstadt has a long-standing tradition of poetry and song, and thus also boasts a long history of constructing instruments to that effect. Bards are most proud of their songs and poems, and perhaps the instruments, too, would be proud of their owners and their musical tradition.",
-      "gadget" : {
-         "reusable" : "Yes",
-         "equipment" : "Yes",
-      },
-      "type": "gadgets",
-      "rarity" : 4,
-      "img" : url + "windsong_lyre.png",
       "sources" : [
          "Invitation of Windblume Event Shop"
       ]

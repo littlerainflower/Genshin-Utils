@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
       url : "/"
     }
   ]
-  res.render('index', { title: 'Home', active:"index", events : events.get_curr_events(), breadcrumbs : breadcrumb });
+  res.render('index', { title: 'Home', active:"index", recently_added : items.get_recently_added(), breadcrumbs : breadcrumb });
 });
 
 router.get('/database', function(req, res, next) {

@@ -8,8 +8,8 @@ block content
                     p Genshin Utils is a fan-made DB as well as a web panel for the demonstration of the certain DB <a href='./docs'><b>RESTful API</b></a>.
         .column.card.col-ml
                 .container
-                    h4 Current Game Events
+                    h4 Recently Added Items
                     ul
-                        each event in events
+                        each item in recently_added
                             li.mb-10
-                                a(href="./events/"+event.id)= event.name
+                                a(href="./items/"+item.id)= item.name
