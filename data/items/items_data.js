@@ -2195,7 +2195,7 @@ module.exports = [
       ]
    },
    {
-      "id": "bacon",
+      "id": "bamboo_shoot",
       "name": "Bamboo Shoot",
       "type": "cooking_materials",
       "img": url + "bacon.png",
@@ -2228,7 +2228,7 @@ module.exports = [
       ]
    },
    {
-      "id": "butter",
+      "id": "cabbage",
       "name": "Cabbage",
       "type": "cooking_materials",
       "img": url + "cabbage.png",
@@ -2825,7 +2825,7 @@ module.exports = [
       "description": "Grants greater affinity to Electro, boosting Electro DMG. It induces a tingling sensation on the skin, able to better channel Electro elements at the risk of electrical fire that would definitely ruin your perfect hair.",
       "effect": "Increases all party members' Electro DMG by 25% for 300s.",
       "type": "potions",
-      "img": url + "insulation_potion.png",
+      "img": url + "shocking_essential_oil.png",
       "sources": [
          "Alchemy"
       ]
@@ -2946,6 +2946,295 @@ module.exports = [
       "img" : url + "geoculus_resonance_stone.png",
       "sources" : [
          "Reach Reputation Level 2 in Liyue"
+      ]
+   },
+   {
+      "id" : "inquisitive_endora",
+      "name" : "Inquisitive Endora",
+      "description" : "A strange Lochfolk larva, filled with curiosity about the world at large. Lochfolk specialize in shifting into watery shapes and can meld with other water bodies to synchronize emotions and knowledge alike. Endora is still small, and Endora is very curious. Endora can spit out bubbles to meld with other beings of water, through which she shall learn everything.",
+      "effect" : "Replaces the player's Elemental Skill with Endora's Bubble Spit ability.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "inquisitive_endora.png",
+      "sources" : [
+         "Wishful Drops Event"
+      ]
+   },
+   {
+      "id" : "kamera",
+      "name" : "Kamera",
+      "description" : "A convenient tool that records and saves images upon use. A special item from Fontaine that can record images. People and places to remember must come aplenty for a Traveler roaming the world.",
+      "effect" : "Allows pictures to be taken anywhere, even while fighting. Has no cooldown period.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "kamera.png",
+      "sources" : [
+         "Reward from Snapshots World Quest"
+      ]
+   },
+   {
+      "id" : "kurious_kamera",
+      "name" : "Kurious Kamera",
+      "description" : "Use this during the \"Five Flushes of Fortune\" event to store images of objects with a specific color. Ji Tong imported this new-fangled Kamera model from Fontaine but it doesn't seem to work quite as he'd hoped...",
+      "effect" : "Allows event-specific pictures to be taken anywhere. Has no cooldown period.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "kurious_kamera.png",
+      "sources" : [
+         "Reward from Kurious Kamera World Quest"
+      ]
+   },
+   {
+      "id" : "mini_seelie_curcuma",
+      "name" : "Mini Seelie: Curcuma",
+      "description" : "A memento from the Lost Riches event. Equip it to obtain a mini Seelie companion. A miniature golden Seelie. It gives off a feeling very similar to that of Mora. They say that Seelie of this color represent good fortune.",
+      "effect" : "Commemorative gadget.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "mini_seelie_curcuma.png",
+      "sources" : [
+         "Lost Riches Event"
+      ]
+   },
+   {
+      "id" : "mini_seelie_dayflower",
+      "name" : "Mini Seelie: Dayflower",
+      "description" : "A memento from the Lost Riches event. Equip it to obtain a mini Seelie companion. A miniature sea-blue Seelie. Unlike other Seelie, it does not serve to guide others, but to follow them to see the world.",
+      "effect" : "Commemorative gadget.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "mini_seelie_dayflower.png",
+      "sources" : [
+         "Lost Riches Event"
+      ]
+   },
+   {
+      "id" : "mini_seelie_rose",
+      "name" : "Mini Seelie: Rosé",
+      "description" : "A memento from the Lost Riches event. Equip it to obtain a mini Seelie companion. A miniature powder-pink Seelie. Though it cannot say a word, it will silently follow a traveler that strikes its fancy around the world.",
+      "effect" : "Commemorative gadget.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "mini_seelie_rose.png",
+      "sources" : [
+         "Lost Riches Event"
+      ]
+   },
+   {
+      "id" : "nre_menu_30",
+      "name" : "NRE (Menu 30)",
+      "description" : "A handy meal-in-a-pouch that can transform most foods into instantly absorbable nutritional matter. Despite the fact that it can greatly increase the efficiency of nutritional intake, most knights aren't too keen to put their food in it...",
+      "effect" : "A bag with two slots, one for HP recovery food and the other for Revival type food, accessible from hotbar.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "nre_menu_30.png",
+      "sources" : [
+         "Reach Reputation Level 5 in Mondstadt"
+      ]
+   },
+   {
+      "id" : "parametric_transformer",
+      "name" : "Parametric Transformer",
+      "description" : "This mysterious device, discovered within the ruins, has the power to accelerate cycles and \"transmute\" material objects. generally speaking, everything is undergoing a cycle. Memories and elements surge within the ley lines, rotten fallen fruits return to the soil, and the trees born from the soil will one day bear their crystalline fruit...",
+      "effect" : "A device that can transmute up to 150 materials placed within to convert it into some other material. Use Elemental Attacks to generate energy for the transmutation. It has a cooldown of 7 days.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "No",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "parametric_transformer.png",
+      "sources" : [
+         "Reward from Tianqiu Treasure Trail World Quest"
+      ]
+   },
+   {
+      "id" : "portable_waypoint",
+      "name" : "Portable Waypoint",
+      "description" : "Use this to create a temporary Teleport Waypoint at your current location. Only one can exist at a time. A pocket-sized item that creates a temporary Teleport Waypoint. It is capable of connecting with the ley lines, at least to the extent necessary to bring about teleportation. Although it offers an incredible convenience to Vision bearers, the actual principles behind Teleport Waypoints are not yet fully understood. We can only hope that using them does not cause any undesirable side effects...",
+      "effect" : "Creates a temporary waypoint at current location for 7 days with a limit of 1 in the world.",
+      "gadget" : {
+         "reusable" : "No",
+         "equipment" : "No",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "portable_waypoint.png",
+      "sources" : [
+         "Reach Reputation Level 6 in Mondstadt"
+      ]
+   },
+   {
+      "id" : "serenitea_pot",
+      "name" : "Serenitea Pot",
+      "description" : "A teapot obtained from Madame Ping. There seems to be a whole realm within it...",
+      "effect" : "Enter the Serenitea Pot to access player housing.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "No",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "serenitea_pot.png",
+      "sources" : [
+         "Reward from A Teapot to Call Home: Part I Quest"
+      ]
+   },
+   {
+      "id" : "special_kamera",
+      "name" : "Special Kamera",
+      "description" : "When used, this useful gadget can save and store the scenery before it and add a special color tone to it. A strange device from Fontaine that will not only record sceneries but will also add special colors to the printed images. This design was made in response to \"The Steambird\"'s request for a Kamera that could not only reflect the environment, but also the emotions of the one taking the picture. Unfortunately, the final product could not quite match their specifications.",
+      "effect" : "Allows pictures with a special border to be taken anywhere. Has no cooldown period.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "special_kamera.png",
+      "sources" : [
+         "Reward from Perfect Shot World Quest"
+      ]
+   },
+   {
+      "id" : "treasure_seeking_seelie",
+      "name" : "Treasure-Seeking Seelie",
+      "description" : "A small and special Seelie, particularly sensitive to the presence of Iron Coins. A companion entrusted to you by Ulman. Seelie are naturally inclined to guide people, though this Seelie seems weaker than usual, and possesses a remarkable obsession with Iron Coins...",
+      "effect" : "Reveals the presence of Iron Coins.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "treasure_seeking_seelie.png",
+      "sources" : [
+         "Lost Riches Event"
+      ]
+   },
+   {
+      "id" : "warming_bottle",
+      "name" : "Warming Bottle",
+      "description" : "Upon use, emits heat for a short period over a small area, diminishing the effect of Sheer Cold. Warming Seelie have evolved in response to the extreme change in temperature to give the comfort of warmth to those who seek it. This convenient gadget was originally crafted by those who struggled to survive in the snowy mountains in imitation of such evolved Seelie.",
+      "effect" : "Emits heat for a short period over a small area to diminish the effect of Sheer Cold.",
+      "gadget" : {
+         "reusable" : "No",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 3,
+      "img" : url + "warming_bottle.png",
+      "sources" : [
+         "Reach Frostbearing Tree Offering Level 4"
+      ]
+   },
+   {
+      "id" : "waverider_repair_toolbox",
+      "name" : "Waverider Repair Toolbox",
+      "description" : "A toolbox filled with all manner of items that can be used to repair the damage done to a Waverider.\n" +
+          "Restores 50% of a Waverider's structural integrity.\n" +
+          "Has a 90s cooldown.",
+      "effect" : "Repairs the damage done to a Waverider by restoring 50% of the health on a 90 second cooldown.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "No",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "waverider_repair_toolbox.png",
+      "sources" : [
+         "Midsummer Island Adventure Part I: Main Cannon, Make Ready... Fire!"
+      ]
+   },
+   {
+      "id" : "wind_catcher",
+      "name" : "Wind Catcher",
+      "description" : "This item was designed by Knights of Favonius scholars to help the Knights on their scouting expeditions and travels by affording them the ability to manipulate the blessings of the Anemo God. In order to take advantage of its wind currents with a wind glider, however, you technically need a gliding license - this has prevented it from being widely used, at least legally anyway.",
+      "effect" : "A bottle that is able to hold up to 5 Anemograna and use their energy to create wind currents. Has a cooldown of 100 seconds and cannot be used in combat.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "wind_catcher.png",
+      "sources" : [
+         "Reach Reputation Level 3 in Mondstadt"
+      ]
+   },
+   {
+      "id" : "wind_blessed_harpastum",
+      "name" : "Wind-Blessed Harpastum",
+      "description" : "A harpastum made from pure bird feathers and strong fabric. Perhaps it contains some strange power...",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "wind_blessed_harpastum.png",
+      "sources" : [
+         "Summer Vacation: Proceed With Caution"
+      ]
+   },
+   {
+      "id" : "windblume_festival_commemorative_balloon",
+      "name" : "Windblume Festival Commemorative Balloon",
+      "effect" : "Releases a single balloon every time it is used. It has a cooldown of 5 seconds.",
+      "description" : "Use this to release a balloon that can be popped. Balloons have special significance in the land of the wind. for they represent the freedom to drift with the wind. Of course, air pressure will destroy balloons once they've reached a certain height.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "windblume_festival_commemorative_balloon.png",
+      "sources" : [
+         "Invitation of Windblume Event Shop"
+      ]
+   },
+   {
+      "id" : "windsong_lyre",
+      "name" : "Windsong Lyre",
+      "effect" : "Allows the player to play music.",
+      "description" : "Use this traditional instrument from Mondstadt to play songs. An instrument of incredible workmanship, it will surely produce moving music when played by able hands. Mondstadt has a long-standing tradition of poetry and song, and thus also boasts a long history of constructing instruments to that effect. Bards are most proud of their songs and poems, and perhaps the instruments, too, would be proud of their owners and their musical tradition.",
+      "gadget" : {
+         "reusable" : "Yes",
+         "equipment" : "Yes",
+      },
+      "type": "gadgets",
+      "rarity" : 4,
+      "img" : url + "windsong_lyre.png",
+      "sources" : [
+         "Invitation of Windblume Event Shop"
       ]
    },
 ]

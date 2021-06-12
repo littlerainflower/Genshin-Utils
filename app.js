@@ -99,6 +99,12 @@ app.locals.todos = [
 
 app.locals.changelog = [
   {
+    "date" : "2021/6/12",
+    "changes" : [
+      "Added All Items With Their Respective Images",
+    ]
+  },
+  {
     "date" : "2021/6/7",
     "changes" : [
       "Added Weapon Details Page",
